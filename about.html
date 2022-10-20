@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>CODEASY : Online Code Editor</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./CSS/style.css" />
+    <!-- <script src="./script.js"></script> -->
+  </head>
+  <body>
+    <!--Navigation Section starts-->
+    <header>
+      <img src="./IMG/menu.png" alt="menu" id="menu" class="menu">
+      <div class="logo">
+          <a href="index.html">
+              <h3>CODEASY</h3>
+          </a>
+      </div>
+      <nav>
+          <ul>
+              <li>
+                  <a href="index.html"> Home </a>
+              </li>
+              <li>
+                  <a class="active" href="about.html"> About </a>
+              </li>
+              <li>
+                  <a href="contact.html"> Contact </a>
+              </li>
+              <!-- <li><a href="#"> Terms of use </a></li> -->
+              <li>
+                  <a href="joinus.html"> Join Us </a>
+              </li>
+          </ul>
+      </nav>
+      <div class="logsign">
+          <a href="#" class="sign" id="signup">Sign up</a>
+          <a href="#" id="login">Log in</a>
+      </div>
+  </header>
+    <!--Navigation Section ends-->
+     <!-- toggle_bar starts here -->
+
+
+  <div class="toggle_bar" id="toggle_bar">
+    <h5>TRY OUR ONLINE EDITOR</h5>
+    <a href="editor.html"><button type="button">Start coding</button></a>
+    <ul>
+      <li>
+        <a class="active" href="index.html"> Home </a>
+      </li>
+      <li>
+        <a href="about.html"> About </a>
+      </li>
+      <li>
+        <a href="contact.html"> Contact </a>
+      </li>
+      <!-- <li><a href="#"> Terms of use </a></li> -->
+      <li>
+        <a href="joinus.html"> Join Us </a>
+      </li>
+    </ul>
+  </div>
+
+  <!-- toggle_bar ends here -->
+     <div class="wrapper">
+      <div class="wrapper wrapper-1">
+          <center>
+              <h1 style="font-size: 89px;">Our mission</h1>
+              <h2>Is to bring the next billion software creators online.</h2>
+              </br>
+              <p>We build powerful, simple tools and platforms for learners, educators, and developers.</p>
+              <br>
+              <h2 style="letter-spacing: 5px; text-decoration:underline;">Portfolio</h2>
+              <br>
+              <img src="rs.png" alt="rohit's Image" height="150px" class="my">
+              <ul style="display: flex; list-style-type:none; height: 50px;  justify-content: center; padding: 20px; justify-content: space-around;">
+                <li><a href="https://www.facebook.com/rohitsinghrs4141/"><img src="./IMG/fb.png" alt="" height="50px" class="social"></a></li>
+                <li><a href="https://www.instagram.com/rohit._.0412/"><img src="./IMG/instagram.png" height="50px" alt="" class="social"></a></li>
+                <li><a href="https://github.com/rohit4141"><img src="./IMG/github.png" height="50px" alt="" class="social"></a></li>
+                <li><a href="https://www.linkedin.com/in/rohit-singh-rs31321/"><img src="./IMG/linkedin.png" height="50px" alt="" class="social"></a></li>
+              </ul>
+
+          </center>
+      </div>
+      <div class="bubbles">
+        <img src="./IMG/bubble.png" alt="bubble">
+        <img src="./IMG/bubble.png" alt="bubble">
+        <img src="./IMG/bubble.png" alt="bubble">
+        <img src="./IMG/bubble.png" alt="bubble">
+        <img src="./IMG/bubble.png" alt="bubble">
+        <img src="./IMG/bubble.png" alt="bubble">
+        <img src="./IMG/bubble.png" alt="bubble">
+      </div>
+  </div> <!--Footer Section starts-->
+    <!-- <footer class="footer">
+       
+      <div class="container">
+        <div class="row">
+         
+          <div class="footer-col">
+            <h4>CODEASY</h4>
+            <ul>
+              <li><a href="#">about us</a></li>
+              <li><a href="#">our services</a></li>
+              <li><a href="#">privacy policy</a></li>
+              <li><a href="#">affiliate program</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>For</h4>
+            <ul>
+              <li><a href="#">Teams</a></li>
+              <li><a href="#">Education</a></li>
+              <li><a href="#">Privacy</a></li>
+              <li><a href="#">Embeds</a></li>
+              <li><a href="#">Asset Hosting</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Community</h4>
+            <ul>
+              <li><a href="#">Spark</a></li>
+              <li><a href="#">Challenges</a></li>
+              <li><a href="#">Topics</a></li>
+              <li><a href="#">Code of Conduct</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>follow us</h4>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div> 
+          </div>
+        </div>
+      </div>
+    </footer> -->
+   
+    <footer>
+      <hr style="color: rgb(161, 161, 161); border-width: 0.8px ;">
+      <center><p>copyright &copy;2022 <a href="https://www.linkedin.com/in/rohit-singh-rs31321/">rohitsingh</a>  </p></center>
+    </footer>
+    <!--Footer Section-->
+    <div class="popup">
+      <!-- Signup section starts here -->
+      
+          <div class="popup_signup">
+            <img src="IMG/crossmark.png" alt="crossmark" class="close_signup">
+            <h2>CODEASY</h2>
+            <div id="error_message">
+            </div>
+            <form id="myform">
+              <div class="input_field">
+                <input type="text" placeholder="First name" id="fname" requ>
+              </div>
+              <div class="input_field">
+                <input type="text" placeholder="Last name" id="lname">
+              </div>
+              <div class="input_field">
+                <input type="tel" placeholder="Phone" id="phone"  maxlength="10">
+              </div>
+              <div class="input_field">
+                <input type="text" placeholder="Email" id="email">
+              </div>
+              <div class="input_field">
+                <!-- <input type="password" placeholder="Password" id="pass" onkeyup="return validate_pass(this.value ) "> -->
+                <input type="password" placeholder="Password" id="pass" >
+              </div>
+              <div class="input_field">
+                <input type="password" placeholder="Confirm Password" id="cpass">
+              </div>
+              <div>
+                <input type="checkbox" id="show-password">Show Password
+              </div>
+              <div class="btn">
+                <button type="submit" id="submit" onclick="validate()">Register</button>
+              </div>
+            </form>
+      
+          </div>
+          <!--Signup section ends here-->
+      
+          <!-- login section starts here -->
+      
+          <div class="popup_login">
+            <img src="IMG/crossmark.png" alt="crossmark" class="close">
+            <br>
+            <h2>CODEASY</h2>
+      
+            <div id="error_message_log">
+      
+      
+            </div>
+            <form action="editor.html" onsubmit="return validatelogin();">
+      
+      
+              <input type="text" placeholder="Email" id="emailid">
+      
+      
+              <input type="password" placeholder="Password" id="passfinal">
+      
+      
+              <input type="submit" id="submitLogin" value="Login">
+      
+      
+            </form>
+      
+            <p>Don't have an account?&nbsp<a href="#" id="signups"
+                style="color: rgb(79, 209, 83); text-decoration: overline black;:pointer; ">Sign up</a></p>
+          </div>
+      
+        </div>
+      
+        <!-- login section ends here -->
+      
+        <!-- <script src="./JS/script.js"></script> -->
+      
+      
+        <script>
+          document.getElementById("signup").addEventListener("click", function () {
+            document.querySelector(".popup").style.display = "flex";
+            document.querySelector(".popup_signup").style.display = "block";
+            document.querySelector(".popup_login").style.display = "none";
+          })
+          document.getElementById("signups").addEventListener("click", function () {
+            document.querySelector(".popup").style.display = "flex";
+            document.querySelector(".popup_signup").style.display = "block";
+            document.querySelector(".popup_login").style.display = "none";
+          })
+      
+      
+          document.getElementById("login").addEventListener("click", function () {
+            document.querySelector(".popup").style.display = "flex";
+            document.querySelector(".popup_signup").style.display = "none";
+            document.querySelector(".popup_login").style.display = "block";
+          })
+      
+          var button = document.getElementById('menu'); // Assumes element with id='button'
+      
+          button.onclick = function () {
+            var div = document.getElementById('toggle_bar');
+            if (div.style.display !== 'none') {
+              div.style.display = 'none';
+            }
+            else {
+              div.style.display = 'block';
+            }
+          };
+      
+          document.querySelector(".close").addEventListener("click", function () {
+            document.querySelector(".popup").style.display = "none";
+            document.querySelector(".popup_signup").style.display = "none";
+            document.querySelector(".popup_login").style.display = "none";
+          })
+          document.querySelector(".close_signup").addEventListener("click", function () {
+            document.querySelector(".popup").style.display = "none";
+            document.querySelector(".popup_signup").style.display = "none";
+            document.querySelector(".popup_login").style.display = "none";
+          })
+        </script>
+      
+      <script src="./JS/scripts.js"></script>
+      </body>
+      
+      </html>

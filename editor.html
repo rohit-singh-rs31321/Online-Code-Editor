@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CODEASY : Online Code Editor</title>
+    <link rel="shortcut icon" href="/img/favicon.png" />
+    <link rel="stylesheet" type="text/css" href="./CSS/editor.css">
+    <link rel=”stylesheet” href=”https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css”rel=”nofollow”
+        integrity=”sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm” crossorigin=”anonymous”>
+
+    <script defer type="text/javascript">
+        function update() {
+
+            let htmlCode = document.getElementById("htmlCode").value;
+            let cssCode = document.getElementById("cssCode").value;
+            let javascriptCode = document.getElementById("javascriptCode").value;
+            let text = htmlCode + "<style>" + cssCode + "</style>" + "<scri" + "pt>" + javascriptCode + "</scri" + "pt>";
+            let iframe = document.getElementById('viewer').contentWindow.document;
+            iframe.open();
+            iframe.write(text);
+            iframe.close();
+
+        }
+        Split([".container", ".iframe-container"]);
+        Split(["#htmlCode", "#cssCode", "#javascriptCode"]);
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/split.js/1.0.0/split.min.js"
+        integrity="sha512-tTsZnBXEzNdEaqUO9Ok8fUofS73xieiBa54pD/sxOSvayIgItM9MmEM0CnUjA13LDnJT22sfwmjf20+Bo2174g=="
+        crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <!--Navigation Section starts-->
+    <nav>
+        <div class="logo">
+            <a href="index.html">
+                <h3>CODEASY</h3>
+            </a>
+
+        </div>
+        <div class="logsign">
+            <img src="IMG/moon.png" id="icon">
+            <a href="index.html">LOG OUT</a>
+
+        </div>
+    </nav>
+    <!--Navigation Section ends-->
+    <div class="main-container">
+        <div class="container split">
+            <textarea id="htmlCode" placeholder="Type HTML code here" oninput="update()"></textarea>
+            <textarea id="cssCode" placeholder="Type CSS code here" oninput="update()"></textarea>
+            <textarea id="javascriptCode" placeholder="Type JavaScript code here" oninput="update()"></textarea>
+        </div>
+        <!-- <div class="gutter gutter-horizontal" style="width: 10px;"></div> -->
+        <div class="iframe-container split">
+            <iframe id="viewer"></iframe>
+        </div>
+    </div>
+    <script>
+        var icon = document.getElementById("icon");
+
+        icon.onclick = function () {
+            document.body.classList.toggle("dark-theme");
+            if (document.body.classList.contains("dark-theme")) {
+                icon.src = "IMG/sun.png";
+            } else {
+                icon.src = "IMG/moon.png";
+            }
+        }
+    </script>
+</body>
+
+</html>
