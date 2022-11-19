@@ -6,7 +6,6 @@
   <title>CODEASY : Online Code Editor</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="./CSS/style.css" />
-  <script src="./script.js"></script>
   <script src="https://maps.googleapis.com/maps/api/js"></script>
 </head>
 
@@ -70,25 +69,25 @@
   <div class="wrappercs">
     <div class="contactUs">
       <h2 style="letter-spacing: 7px;">CONTACT US</h2>
-      <div id="error_message">
+      <div id="error_message_contact">
       </div>
-      <form id="myform" onsubmit="return validate();">
+      <form id="myform">
         <div class="input_field">
-          <input type="text" placeholder="Full name" id="fname">
+          <input type="text" placeholder="Full name" id="cfname">
         </div>
         <div class="input_field">
-          <input type="tel" placeholder="Phone" id="phone" maxlength="10">
+          <input type="tel" placeholder="Phone" id="cphone" maxlength="10">
         </div>
         <div class="input_field">
-          <input type="text" placeholder="Email" id="email">
+          <input type="text" placeholder="Email" id="cemail">
         </div>
         <div class="input_field">
-          <textarea name="textarea" id="tarea" rows="10"
+          <textarea name="textarea" id="ctarea" rows="10"
             placeholder="write something to give suggestioin or query..."></textarea>
         </div>
 
         <div class="btn">
-          <button type="submit" id="contactSubmit" onclick="validate()">Submit</button>
+          <button type="submit" id="contactSubmit">Submit</button>
         </div>
     </div>
     <div>
@@ -113,7 +112,7 @@ tel no.: 080-81834141
   <footer>
     <hr style="color: rgb(161, 161, 161); border-width: 0.8px ;">
     <center>
-      <p>copyright &copy;2022 <a href="https://www.linkedin.com/in/rohit-singh-rs31321/">rohitsingh</a> </p>
+      <p>Developed by - <a href="https://www.linkedin.com/in/rohit-singh-rs31321/">rohitsingh</a> </p>
     </center>
   </footer>
   <!--Footer Section ends here-->
@@ -139,17 +138,16 @@ tel no.: 080-81834141
           <input type="text" placeholder="Email" id="email">
         </div>
         <div class="input_field">
-          <!-- <input type="password" placeholder="Password" id="pass" onkeyup="return validate_pass(this.value ) "> -->
           <input type="password" placeholder="Password" id="pass">
         </div>
         <div class="input_field">
           <input type="password" placeholder="Confirm Password" id="cpass">
         </div>
-        <div>
+        <div id="show_pass">
           <input type="checkbox" id="show-password">Show Password
         </div>
         <div class="btn">
-          <button type="submit" id="submit" onclick="validate()">Register</button>
+          <button type="submit" id="submit">Register</button>
         </div>
       </form>
 
@@ -192,55 +190,7 @@ tel no.: 080-81834141
   <!-- <script src="./JS/script.js"></script> -->
 
 
-  <script>
-    document.getElementById("signup").addEventListener("click", function () {
-      document.querySelector(".popup").style.display = "flex";
-      document.querySelector(".popup_signup").style.display = "block";
-      document.querySelector(".popup_login").style.display = "none";
-    })
-    document.getElementById("signups").addEventListener("click", function () {
-      document.querySelector(".popup").style.display = "flex";
-      document.querySelector(".popup_signup").style.display = "block";
-      document.querySelector(".popup_login").style.display = "none";
-    })
-
-
-    document.getElementById("login").addEventListener("click", function () {
-      document.querySelector(".popup").style.display = "flex";
-      document.querySelector(".popup_signup").style.display = "none";
-      document.querySelector(".popup_login").style.display = "block";
-    })
-
-    var button = document.getElementById('menu'); // Assumes element with id='button'
-
-    button.onclick = function () {
-      var div = document.getElementById('toggle_bar');
-      if (div.style.display !== 'none') {
-        div.style.display = 'none';
-      }
-      else {
-        div.style.display = 'block';
-      }
-    };
-
-    document.querySelector(".close").addEventListener("click", function () {
-      document.querySelector(".popup").style.display = "none";
-      document.querySelector(".popup_signup").style.display = "none";
-      document.querySelector(".popup_login").style.display = "none";
-    })
-    document.querySelector(".close_signup").addEventListener("click", function () {
-      document.querySelector(".popup").style.display = "none";
-      document.querySelector(".popup_signup").style.display = "none";
-      document.querySelector(".popup_login").style.display = "none";
-    })
-
-    var map_parameters = { center: { lat: 12.9716, lng: 77.5946 }, zoom: 16 };
-    var map = new google.maps.Map(document.getElementById('location'), map_parameters);
-
-    var position1 = { position: { lat: 12.9716, lng: 77.5946 }, map: map }
-    var marker = new google.maps.Marker(position1);
-  </script>
-
+  <!-- <script src="./JS/scripts.js"></script> -->
   <script src="./JS/contactscripts.js"></script>
 </body>
 

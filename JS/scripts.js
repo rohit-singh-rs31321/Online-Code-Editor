@@ -119,3 +119,45 @@ const handleSubmit = () => {};
 showPassword.addEventListener("click", toggleShowPassword);
 
 btnSubmit.addEventListener("click", onClickValidate);
+
+
+document.getElementById("signup").addEventListener("click", function () {
+  document.querySelector(".popup").style.display = "flex";
+  document.querySelector(".popup_signup").style.display = "block";
+  document.querySelector(".popup_login").style.display = "none";
+})
+document.getElementById("signups").addEventListener("click", function () {
+  document.querySelector(".popup").style.display = "flex";
+  document.querySelector(".popup_signup").style.display = "block";
+  document.querySelector(".popup_login").style.display = "none";
+})
+
+
+document.getElementById("login").addEventListener("click", function () {
+  document.querySelector(".popup").style.display = "flex";
+  document.querySelector(".popup_signup").style.display = "none";
+  document.querySelector(".popup_login").style.display = "block";
+})
+
+var button = document.getElementById('menu'); // Assumes element with id='button'
+
+button.onclick = function () {
+  var div = document.getElementById('toggle_bar');
+  if (div.style.display !== 'none') {
+    div.style.display = 'none';
+  }
+  else {
+    div.style.display = 'block';
+  }
+};
+
+document.querySelector(".close").addEventListener("click", function () {
+  document.querySelector(".popup").style.display = "none";
+  document.querySelector(".popup_signup").style.display = "none";
+  document.querySelector(".popup_login").style.display = "none";
+})
+document.querySelector(".close_signup").addEventListener("click", function () {
+  document.querySelector(".popup").style.display = "none";
+  document.querySelector(".popup_signup").style.display = "none";
+  document.querySelector(".popup_login").style.display = "none";
+})

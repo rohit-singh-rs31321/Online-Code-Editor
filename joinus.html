@@ -5,14 +5,13 @@
     <title>CODEASY : Online Code Editor</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="./CSS/style.css" />
-    <script src="./script.js"></script>
   </head>
   <body>
     <!--Navigation Section starts-->
     <header>
       <img src="./IMG/menu.png" alt="menu" id="menu" class="menu">
       <div class="logo">
-          <a href="#">
+          <a href="index.html">
               <h3>CODEASY</h3>
           </a>
       </div>
@@ -132,7 +131,7 @@
    
     <footer>
       <hr style="color: rgb(161, 161, 161); border-width: 0.8px ;">
-      <center><p>copyright &copy;2022 <a href="https://www.linkedin.com/in/rohit-singh-rs31321/">rohitsingh</a>  </p></center>
+      <center> <p>Developed by - <a href="https://www.linkedin.com/in/rohit-singh-rs31321/">rohitsingh</a>  </p></center>
     </footer>
     <!--Footer Section-->
     <div class="popup">
@@ -163,11 +162,11 @@
               <div class="input_field">
                 <input type="password" placeholder="Confirm Password" id="cpass">
               </div>
-              <div>
+              <div id="show_pass">
                 <input type="checkbox" id="show-password">Show Password
               </div>
               <div class="btn">
-                <button type="submit" id="submit" onclick="validate()">Register</button>
+                <button type="submit" id="submit">Register</button>
               </div>
             </form>
       
@@ -194,7 +193,7 @@
               <input type="password" placeholder="Password" id="passfinal">
       
       
-              <input type="submit" id="submit" value="Login">
+              <input type="submit" id="submitLogin" value="Login">
       
       
             </form>
@@ -207,52 +206,7 @@
       
         <!-- login section ends here -->
       
-        <!-- <script src="./JS/script.js"></script> -->
-      
-      
-        <script>
-          document.getElementById("signup").addEventListener("click", function () {
-            document.querySelector(".popup").style.display = "flex";
-            document.querySelector(".popup_signup").style.display = "block";
-            document.querySelector(".popup_login").style.display = "none";
-          })
-          document.getElementById("signups").addEventListener("click", function () {
-            document.querySelector(".popup").style.display = "flex";
-            document.querySelector(".popup_signup").style.display = "block";
-            document.querySelector(".popup_login").style.display = "none";
-          })
-      
-      
-          document.getElementById("login").addEventListener("click", function () {
-            document.querySelector(".popup").style.display = "flex";
-            document.querySelector(".popup_signup").style.display = "none";
-            document.querySelector(".popup_login").style.display = "block";
-          })
-      
-          var button = document.getElementById('menu'); // Assumes element with id='button'
-      
-          button.onclick = function () {
-            var div = document.getElementById('toggle_bar');
-            if (div.style.display !== 'none') {
-              div.style.display = 'none';
-            }
-            else {
-              div.style.display = 'block';
-            }
-          };
-      
-          document.querySelector(".close").addEventListener("click", function () {
-            document.querySelector(".popup").style.display = "none";
-            document.querySelector(".popup_signup").style.display = "none";
-            document.querySelector(".popup_login").style.display = "none";
-          })
-          document.querySelector(".close_signup").addEventListener("click", function () {
-            document.querySelector(".popup").style.display = "none";
-            document.querySelector(".popup_signup").style.display = "none";
-            document.querySelector(".popup_login").style.display = "none";
-          })
-        </script>
-      
+     
       <script src="./JS/scripts.js"></script>
       </body>
       

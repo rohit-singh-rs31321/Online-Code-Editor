@@ -92,56 +92,12 @@
         <img src="./IMG/bubble.png" alt="bubble">
         <img src="./IMG/bubble.png" alt="bubble">
       </div>
-  </div> <!--Footer Section starts-->
-    <!-- <footer class="footer">
-       
-      <div class="container">
-        <div class="row">
-         
-          <div class="footer-col">
-            <h4>CODEASY</h4>
-            <ul>
-              <li><a href="#">about us</a></li>
-              <li><a href="#">our services</a></li>
-              <li><a href="#">privacy policy</a></li>
-              <li><a href="#">affiliate program</a></li>
-            </ul>
-          </div>
-          <div class="footer-col">
-            <h4>For</h4>
-            <ul>
-              <li><a href="#">Teams</a></li>
-              <li><a href="#">Education</a></li>
-              <li><a href="#">Privacy</a></li>
-              <li><a href="#">Embeds</a></li>
-              <li><a href="#">Asset Hosting</a></li>
-            </ul>
-          </div>
-          <div class="footer-col">
-            <h4>Community</h4>
-            <ul>
-              <li><a href="#">Spark</a></li>
-              <li><a href="#">Challenges</a></li>
-              <li><a href="#">Topics</a></li>
-              <li><a href="#">Code of Conduct</a></li>
-            </ul>
-          </div>
-          <div class="footer-col">
-            <h4>follow us</h4>
-            <div class="social-links">
-              <a href="#"><i class="fab fa-facebook-f"></i></a>
-              <a href="#"><i class="fab fa-twitter"></i></a>
-              <a href="#"><i class="fab fa-instagram"></i></a>
-              <a href="#"><i class="fab fa-linkedin-in"></i></a>
-            </div> 
-          </div>
-        </div>
-      </div>
-    </footer> -->
+  </div> 
+  
    
     <footer>
       <hr style="color: rgb(161, 161, 161); border-width: 0.8px ;">
-      <center><p>copyright &copy;2022 <a href="https://www.linkedin.com/in/rohit-singh-rs31321/">rohitsingh</a>  </p></center>
+      <center> <p>Developed by - <a href="https://www.linkedin.com/in/rohit-singh-rs31321/">rohitsingh</a>  </p></center>
     </footer>
     <!--Footer Section-->
     <div class="popup">
@@ -172,11 +128,11 @@
               <div class="input_field">
                 <input type="password" placeholder="Confirm Password" id="cpass">
               </div>
-              <div>
+              <div id="show_pass">
                 <input type="checkbox" id="show-password">Show Password
               </div>
               <div class="btn">
-                <button type="submit" id="submit" onclick="validate()">Register</button>
+                <button type="submit" id="submit">Register</button>
               </div>
             </form>
       
@@ -215,52 +171,6 @@
         </div>
       
         <!-- login section ends here -->
-      
-        <!-- <script src="./JS/script.js"></script> -->
-      
-      
-        <script>
-          document.getElementById("signup").addEventListener("click", function () {
-            document.querySelector(".popup").style.display = "flex";
-            document.querySelector(".popup_signup").style.display = "block";
-            document.querySelector(".popup_login").style.display = "none";
-          })
-          document.getElementById("signups").addEventListener("click", function () {
-            document.querySelector(".popup").style.display = "flex";
-            document.querySelector(".popup_signup").style.display = "block";
-            document.querySelector(".popup_login").style.display = "none";
-          })
-      
-      
-          document.getElementById("login").addEventListener("click", function () {
-            document.querySelector(".popup").style.display = "flex";
-            document.querySelector(".popup_signup").style.display = "none";
-            document.querySelector(".popup_login").style.display = "block";
-          })
-      
-          var button = document.getElementById('menu'); // Assumes element with id='button'
-      
-          button.onclick = function () {
-            var div = document.getElementById('toggle_bar');
-            if (div.style.display !== 'none') {
-              div.style.display = 'none';
-            }
-            else {
-              div.style.display = 'block';
-            }
-          };
-      
-          document.querySelector(".close").addEventListener("click", function () {
-            document.querySelector(".popup").style.display = "none";
-            document.querySelector(".popup_signup").style.display = "none";
-            document.querySelector(".popup_login").style.display = "none";
-          })
-          document.querySelector(".close_signup").addEventListener("click", function () {
-            document.querySelector(".popup").style.display = "none";
-            document.querySelector(".popup_signup").style.display = "none";
-            document.querySelector(".popup_login").style.display = "none";
-          })
-        </script>
       
       <script src="./JS/scripts.js"></script>
       </body>
